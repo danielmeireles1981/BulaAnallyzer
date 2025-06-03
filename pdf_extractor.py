@@ -1,84 +1,110 @@
-import os
-import pdfplumber
 import re
-import unicodedata
+import os
+import csv
+import pdfplumber
 
-def extract_medicine_name(text):
+principios_ativos = [
+    "paracetamol", "dipirona", "ibuprofeno", "amoxicilina", "azitromicina", "cefalexina",
+    "omeprazol", "pantoprazol", "ranitidina", "loratadina", "sinvastatina", "atenolol", "losartana",
+    "diazepam", "captopril", "metformina", "clonazepam", "hidroclorotiazida", "atorvastatina",
+    "lorazepam", "prednisona", "dexametasona", "budesonida", "risperidona", "nimesulida",
+    "cetoprofeno", "carbamazepina", "sulfametoxazol"
+    # Adicione outros conforme sua base!
+]
+
+ignore_words = {
+    "comprimido", "mg", "ml", "solução", "genérico", "farmacêutica", "sa", "ltda",
+    "identificação", "do", "medicamento", "apresentação", "bula", "medicamento genérico",
+    "uso", "oral", "apresentações", "comprimidos", "modelo", "receberam", "legrand",
+    "ems", "medley", "teuto", "zambon", "prati-donaduzzi", "sandoz", "sanofi", "ache",
+    "novaquimica", "neo", "quimica", "hipolabor", "brainfarma", "farmacêutica", "indústria"
+}
+
+# Novos padrões para título de medicamento ou princípio ativo
+key_patterns = [
+    r"nome do medicamento[:\-]?\s*(.+)",
+    r"nome comercial[:\-]?\s*(.+)",
+    r"produto[:\-]?\s*(.+)",
+    r"princípio ativo[:\-]?\s*(.+)",
+    r"composição[:\-]?\s*(.+)",
+    r"substância ativa[:\-]?\s*(.+)"
+]
+
+def clean_name(raw):
+    """Remove números, sinais e ignora nomes genéricos/laboratoriais."""
+    nome = raw.strip().split()[0]
+    nome = re.sub(r'[^A-Za-zÇçÁÉÍÓÚÃÕÂÊÔÜáéíóúãõâêôü]', '', nome)
+    nome = nome.lower()
+    if nome in ignore_words or len(nome) < 4:
+        return None
+    return nome.title()
+
+def extract_medicine_name(text, filename=None):
     lines = text.strip().split('\n')
-    ignore_words = {
-        "comprimido", "mg", "ml", "solução", "genérico", "farmacêutica", "sa", "ltda",
-        "identificação do medicamento", "apresentação", "bula", "medicamento genérico",
-        "uso oral", "apresentações", "comprimidos", "medicamento", "modelo", "brainfarma", "hipolabor",
-        "composição", "indicações", "posologia", "contrainidicação", "contraindicações",
-        "legrand", "ems", "medley", "teuto", "zambon", "prati-donaduzzi", "sandoz", "sanofi", "ache", "novaquimica", "neo quimica",
-        "receberam"
-    }
-    # 1. Busca padrão “XXX 200 mg”, “XXX 500mg”, etc
-    for line in lines[:40]:
-        match = re.search(r'\b([A-ZÇÃÕÉÊÁÍÓÚÂÔÜa-zçãõâêôúüéíóáà]{5,})\b[\s\-]*[\d\.,]+\s*mg', line)
-        if match:
-            nome = match.group(1)
-            if nome.lower() not in ignore_words and not nome.isdigit():
-                return nome.title()
-    # 2. Busca “composição:” ou “princípio ativo:” na linha
-    for line in lines[:40]:
-        if "composição:" in line.lower() or "princípio ativo:" in line.lower():
-            nome = line.split(":")[-1].strip().split()[0]
-            if nome.lower() not in ignore_words:
-                return nome.title()
-    # 3. Busca “paracetamol”, “ibuprofeno”, “dipirona”, etc. em qualquer parte das 40 primeiras linhas
-    principios_ativos = [
-        "paracetamol", "dipirona", "ibuprofeno", "amoxicilina", "azitromicina",
-        "cefalexina", "omeprazol", "pantoprazol", "loratadina", "sinvastatina",
-        "atenolol", "losartana", "diazepam", "amoxicilina", "cloridrato", "capotril", "captopril"
-    ]
-    for line in lines[:40]:
+    lines = [l for l in lines if l.strip()]  # remove linhas vazias
+    max_lines = min(80, len(lines))
+
+    # 1. Busca explícita por padrões com palavras-chave
+    for idx in range(max_lines):
+        line = lines[idx].lower()
+        for pat in key_patterns:
+            match = re.search(pat, line)
+            if match:
+                possible = match.group(1)
+                cleaned = clean_name(possible)
+                if cleaned:
+                    return cleaned
+
+    # 2. Busca por princípio ativo conhecido
+    for idx in range(max_lines):
+        line = lines[idx].lower()
         for principio in principios_ativos:
-            if principio in line.lower():
+            if re.search(rf"\b{principio}\b", line):
                 return principio.title()
-    # 4. Busca primeira palavra grande em caixa alta que não seja ignorada
-    for line in lines[:40]:
-        for word in line.strip().split():
-            if len(word) > 4 and word.isupper() and word.lower() not in ignore_words:
-                return word.title()
+
+    # 3. Busca padrão “XXX 500 mg”, “XXX comprimido” etc.
+    for idx in range(max_lines):
+        match = re.search(
+            r'\b([A-ZÇÃÕÉÊÁÍÓÚÂÔÜa-zçãõâêôúüéíóà]{4,})\b[\s\-]*(comprimido|capsula|mg|ml|solução)',
+            lines[idx], re.IGNORECASE)
+        if match:
+            possible = match.group(1)
+            cleaned = clean_name(possible)
+            if cleaned:
+                return cleaned
+
+    # 4. Primeira palavra em caixa alta significativa
+    for idx in range(max_lines):
+        for word in lines[idx].split():
+            if len(word) > 4 and word.isupper():
+                cleaned = clean_name(word)
+                if cleaned:
+                    return cleaned
+
+    # 5. Busca pelo nome do arquivo (se fornecido)
+    if filename:
+        # Remove extensões, pontuação e números
+        name_raw = os.path.splitext(os.path.basename(filename))[0]
+        name_candidate = re.split(r'[_\-\s]', name_raw)[0]
+        name_candidate = re.sub(r'\d+', '', name_candidate)
+        cleaned = clean_name(name_candidate)
+        if cleaned:
+            return cleaned
+
+    # 6. Se nada funcionar, retorna "Desconhecido"
     return "Desconhecido"
-
-
-
-def normalize_title(title):
-    title = unicodedata.normalize('NFD', title)
-    title = ''.join(c for c in title if unicodedata.category(c) != 'Mn')
-    title = re.sub(r'[^A-Za-zÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑçãõâêôúüéíóáà ]', '', title)
-    title = re.sub(r'\s+', ' ', title)
-    return title.upper().strip()
 
 def extract_passages_from_pdfs(pdf_folder):
     passages = []
     sources = []
     medicines = {}
 
-    topic_keywords = [
-        "INDICACAO", "INDICACOES", "INDICAÇÃO", "INDICAÇÕES",
-        "POSOLOGIA", "POSOLOGÍA",
-        "CONTRAINDICACAO", "CONTRAINDICACOES", "CONTRAINDICAÇÃO", "CONTRAINDICAÇÕES",
-        "PRECAUCAO", "PRECAUCOES", "PRECAUÇÃO", "PRECAUÇÕES",
-        "GRAVIDEZ", "GESTAÇÃO",
-        "EFEITOS COLATERAIS", "REAÇÕES ADVERSAS", "REACOES ADVERSAS", "REAÇÃO ADVERSA",
-        "ADVERTENCIA", "ADVERTENCIAS", "ADVERTÊNCIA", "ADVERTÊNCIAS",
-        "USO EM CRIANCAS", "USO EM CRIANÇAS", "USO PEDIATRICO", "USO PEDIÁTRICO",
-        "INTERACOES MEDICAMENTOSAS", "INTERAÇÕES MEDICAMENTOSAS", "INTERAÇÃO MEDICAMENTOSA",
-        "INSTRUCOES DE USO", "INSTRUÇÕES DE USO"
-    ]
-    irrelevant_patterns = [
-        "publicação no bulário", "alteração de texto", "embalagem hospitalar",
-        "notificação de alteração", "rdc", "vps", "notificação de", "n/a",
-        "texto de bula", "composição: ver item", "apresentação: ver item",
-        "registro ms", "data da bula"
-    ]
-
-    section_pattern = re.compile(
-        r'((?:[A-ZÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑa-zçãõâêôúüéíóáà ]{4,})[:]?)(?:\n|\r|\r\n)'
-    )
+    log_path = "medicamentos_log.csv"
+    write_header = not os.path.exists(log_path)
+    log_file = open(log_path, "a", newline='', encoding="utf-8")
+    log_writer = csv.writer(log_file)
+    if write_header:
+        log_writer.writerow(["Arquivo", "Nome Extraído", "Linha relevante (exemplo)"])
 
     for filename in os.listdir(pdf_folder):
         if filename.lower().endswith('.pdf'):
@@ -88,27 +114,25 @@ def extract_passages_from_pdfs(pdf_folder):
                     page_text = page.extract_text()
                     if page_text:
                         text += page_text + '\n'
-                medicine = extract_medicine_name(text)
+                # >>> Passe filename para permitir fallback pelo nome do arquivo!
+                medicine = extract_medicine_name(text, filename=filename)
                 medicines[filename] = medicine
-                print(f"\n[DEBUG] Medicamento extraído: {medicine} do arquivo {filename}")
 
-                sections = section_pattern.split(text)
-                print(f"[DEBUG] Títulos detectados no PDF {filename}:")
-                for j in range(1, len(sections), 2):
-                    print(f"  - {sections[j].strip()}")
+                if medicine in {"Desconhecido", "Composição", "Medicamento", "Modelo"} or len(medicine) < 4:
+                    for l in text.splitlines():
+                        if l.strip():
+                            linha_relevante = l.strip()
+                            break
+                    else:
+                        linha_relevante = ""
+                    log_writer.writerow([filename, medicine, linha_relevante])
 
-                for i in range(1, len(sections), 2):
+                sections = re.split(r'([A-ZÇÃÕÉÊÁÍÓÚÂÔÜa-zçãõâêôúüéíóà\s\-]{4,})\n', text)
+                for i in range(1, len(sections) - 1, 2):
                     section_title = sections[i].strip()
-                    section_content = sections[i+1].strip() if (i+1) < len(sections) else ''
-                    normalized_title = normalize_title(section_title)
-                    content_lower = section_content.lower()
-                    if any(normalized_title.startswith(t) for t in topic_keywords):
-                        if len(section_content) > 50 and not any(pat in content_lower for pat in irrelevant_patterns):
-                            print(f"[DEBUG] Salvando passagem: {section_title} | Início: {section_content[:80]}")
-                            passages.append(f"{section_title}\n{section_content}")
-                            sources.append(filename)
-    # Debug final das passagens INDICAÇÕES extraídas:
-    for i, (passage, source) in enumerate(zip(passages, sources)):
-        if 'indica' in passage.lower():
-            print(f"\n[EXTRAÇÃO-DEBUG] Trecho INDICAÇÕES do arquivo {source}:\n{passage[:500]}")
+                    section_content = sections[i + 1].strip()
+                    if len(section_content) > 50:
+                        passages.append(section_title + "\n" + section_content)
+                        sources.append(filename)
+    log_file.close()
     return passages, sources, medicines
