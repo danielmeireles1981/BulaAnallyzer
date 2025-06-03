@@ -21,30 +21,31 @@ gemini_api_key = input("Cole sua chave da API Gemini: ").strip()
 
 # Perguntas do experimento (inclua aqui suas perguntas e as versões reformuladas)
 perguntas = [
-    "Qual medicamento analisado pode ser utilizado durante a gravidez?",
-    "Quais medicamentos analisados apresentam sonolência como efeito colateral?",
-    "Quais medicamentos analisados são indicados para uso em crianças? Existem restrições de idade ou posologia específica?",
-    "Quais medicamentos analisados são recomendados para alívio de dor de cabeça ou dores leves a moderadas?",
-    "Quais medicamentos analisados apresentam risco de reações alérgicas? Cite exemplos e os trechos da bula.",
-    "Quais medicamentos analisados apresentam contraindicação para pacientes com pressão alta (hipertensão)?",
-    "Quais medicamentos analisados necessitam ser administrados junto com alimentos? Existem recomendações específicas sobre jejum ou horários?",
-    "Quais medicamentos analisados possuem contraindicação ou advertência sobre o uso concomitante com álcool? Cite os trechos relevantes.",
-    "Quais medicamentos analisados possuem restrição de uso durante a gravidez?",
-    "Qual é a dosagem recomendada para adultos segundo as bulas dos medicamentos analisados?"
+    "Liste os medicamentos analisados que podem ser usados por gestantes segundo as bulas.",
+    "Liste os medicamentos que apresentam sonolência como efeito colateral nas bulas.",
+    "Quais medicamentos têm indicação pediátrica? Informe faixas etárias e doses mencionadas.",
+    "Liste os medicamentos indicados para dor de cabeça ou dores leves conforme as bulas.",
+    "Quais medicamentos apresentam risco de reações alérgicas? Cite exemplos e trechos das bulas.",
+    "Algum medicamento analisado é contraindicado para pacientes hipertensos segundo as bulas?",
+    "Liste os medicamentos que devem ser tomados com alimentos ou em jejum, conforme as bulas.",
+    "Cite os medicamentos que possuem advertência ou contraindicação sobre uso de álcool segundo as bulas.",
+    "Indique os medicamentos que não devem ser usados por gestantes, segundo as bulas.",
+    "Informe as doses recomendadas para adultos segundo as bulas dos medicamentos analisados."
 ]
 
 perguntas_reformuladas = [
-    "Há algum medicamento dos analisados que pode ser usado por gestantes?",
-    "Algum dos medicamentos apresenta sonolência como possível efeito adverso?",
-    "Existem remédios indicados para crianças? Quais as faixas etárias e dosagens?",
-    "Qual remédio desses serve para dor de cabeça ou outras dores leves?",
-    "Que medicamentos trazem risco de alergia? Cite trechos da bula.",
-    "Existe algum medicamento proibido para quem tem hipertensão?",
-    "Há algum remédio que precisa ser tomado junto com comida ou em jejum?",
-    "Quais não podem ser usados com álcool ou têm advertência sobre isso?",
-    "Existe restrição ao uso dos remédios durante a gravidez?",
-    "Quais as doses recomendadas para adultos conforme as bulas?"
+    "Cite os medicamentos que podem ser utilizados por mulheres grávidas conforme as bulas.",
+    "Liste os medicamentos cuja bula cita sonolência como efeito adverso.",
+    "Quais remédios são indicados para crianças? Mencione faixas etárias e dosagens especificadas.",
+    "Quais medicamentos têm indicação para dor de cabeça ou dor leve nas bulas analisadas?",
+    "Quais remédios possuem risco de alergia? Apresente exemplos com trechos da bula.",
+    "Há medicamentos contraindicados para pessoas com pressão alta conforme as bulas analisadas?",
+    "Quais remédios devem ser administrados junto com alimentos ou em jejum conforme a bula?",
+    "Liste os medicamentos analisados que têm advertência sobre uso de álcool.",
+    "Quais medicamentos têm restrição de uso para gestantes segundo as bulas?",
+    "Liste as doses recomendadas para adultos de acordo com as bulas analisadas."
 ]
+
 
 resultados = []
 
