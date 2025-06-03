@@ -1,0 +1,79 @@
+DataHora,Pergunta,Resposta,Tempo (s),Precisão A1,Precisão A2,Completude A1,Completude A2,Consistência,Pergunta Reformulada,Resposta Reformulada,Tempo Ref (s)
+2025-06-03T20:14:23,Qual medicamento analisado pode ser utilizado durante a gravidez?,"O medicamento Loratadina, de acordo com a categoria de risco na gravidez B, pode ser utilizado durante a gravidez, desde que com orientação médica ou do cirurgião-dentista.",1.86,,,,,72.15686274509804,Há algum medicamento dos analisados que pode ser usado por gestantes?,"Medicamento: Amoxicilina
+Arquivo: bula_1747686151775.pdf
+Tipo: KEYWORD
+
+Sim, a Amoxicilina pode ser considerada apropriada para uso em gestantes quando os benefícios potenciais justificarem os riscos potenciais associados ao medicamento. A Amoxicilina é classificada como Categoria B de risco na gravidez. No entanto, é importante ressaltar que este medicamento não deve ser utilizado por mulheres grávidas sem orientação médica ou do cirurgião-dentista.",3.76
+2025-06-03T20:14:37,Quais medicamentos analisados apresentam sonolência como efeito colateral?,"Os medicamentos analisados que apresentam sonolência como efeito colateral são: Teste, Cetoprofeno, Metformina, Clonazepam, Loratadina, Nimesulida e Losartana.",1.89,,,,,62.93103448275862,Algum dos medicamentos apresenta sonolência como possível efeito adverso?,"Sim, os medicamentos Cetoprofeno, Clonazepam, Loratadina e Metformina apresentam sonolência como possível efeito adverso. (Cetoprofeno - bula_1747686539148.pdf, Clonazepam - bula_1747686400890.pdf, Loratadina - bula_1747686464101.pdf, Metformina - bula_1747686341012.pdf)",1.92
+2025-06-03T20:14:58,Quais medicamentos analisados são indicados para uso em crianças? Existem restrições de idade ou posologia específica?,"Os medicamentos analisados que são indicados para uso em crianças são: Paracetamol e Amoxicilina. 
+
+Para o Paracetamol, a posologia específica para crianças abaixo de 12 anos é de 1 gota/kg até a dosagem máxima de 35 gotas por dose. Para crianças abaixo de 11kg ou 2 anos, não foi especificada uma posologia. Além disso, não existe necessidade de ajuste da dose em idosos.
+
+Para a Amoxicilina, não foram encontradas restrições de idade ou posologia específica na bula fornecida.",5.97,,,,,53.742802303262955,Existem remédios indicados para crianças? Quais as faixas etárias e dosagens?,"**Metformina (bula_1747686341012.pdf - CONTRAINDICAÇÕES):** Este medicamento é contraindicado na faixa etária pediátrica.
+
+**Sulfametoxazol (bula_1747686654507.pdf - Posologia padrão):** Crianças até 12 anos podem utilizar esquemas de dosagem aproximadamente equivalentes à dose diária de 6...
+
+**Prednisona (bula_1747686430224.pdf - Posologia):** A dose pediátrica inicial pode variar de 0,14 mg a 2 mg/kg de peso por dia.
+
+**Atorvastatina (bula_1747686366839.pdf - INDICAÇÕES):** Não foi possível encontrar a resposta no material fornecido.
+
+**Pantoprazol (bula_1747686200930.pdf - REAÇÕES ADVERSAS):** Reações raras em pacientes que utilizam este medicamento podem ocorrer entre 0,01% e 0,1%.
+
+**Loratadina (bula_1747686464101.pdf - INDICAÇÕES):** Não foi possível encontrar a resposta no material fornecido.
+
+**Paracetamol (bula_1747686102131.pdf - POSOLOGIA E MODO DE USAR):** Crianças abaixo de 12 anos podem utilizar 1 gota/kg até a dosagem máxima de 35 gotas por dose. Para crianças abaixo de 11 kg ou 2 anos, consultar o médico antes do uso. Adultos e crianças acima de 12 anos podem tomar de 35 a 55 gotas, 3 a 5 vezes ao dia. A dose diária máxima de paracetamol é de 4000 mg (300 gotas) administrados em doses fracionadas, não excedendo a dose de 1000 mg/dose (75 gotas).
+
+Portanto, o Sulfametoxazol e a Prednisona são remédios indicados para crianças, com dosagens específicas para cada faixa etária.",5.39
+2025-06-03T20:15:16,Quais medicamentos analisados são recomendados para alívio de dor de cabeça ou dores leves a moderadas?,Os medicamentos analisados que são recomendados para alívio de dor de cabeça ou dores leves a moderadas são: Paracetamol e Dipirona.,2.72,,,,,64.25992779783394,Qual remédio desses serve para dor de cabeça ou outras dores leves?,"O Paracetamol é indicado para o alívio temporário de dores leves a moderadas, incluindo dor de cabeça, conforme mencionado na seção de INDICAÇÕES da bula.",4.73
+2025-06-03T20:15:35,Quais medicamentos analisados apresentam risco de reações alérgicas? Cite exemplos e os trechos da bula.,"Os medicamentos analisados que apresentam risco de reações alérgicas são o Pantoprazol, a Amoxicilina, o Cetoprofeno, o Paracetamol e o Ibuprofeno.
+
+- Pantoprazol: ""Reações alérgicas como coceira e reações de pele (exantema, rash e erupções)"" (Pantoprazol, bula_1747686200930.pdf, seção REAÇÕES ADVERSAS).
+- Amoxicilina: ""reações alérgicas graves, incluindo edema angioneurótico, anafilaxia"" (Amoxicilina, bula_1747686151775.pdf, seção KEYWORD).
+- Cetoprofeno: ""reações alérgicas, como a asma"" (Cetoprofeno, bula_1747686539148.pdf, seção KEYWORD).
+- Paracetamol: ""reações cutâneas sérias"" e ""reações alérgicas a este medicamento"" (Paracetamol, bula_1747686102131.pdf, seção KEYWORD).
+- Ibuprofeno: ""reações alérgicas, como a asma"" (Ibuprofeno, bula_1747686119869.pdf, seção KEYWORD).",7.12,,,,,39.91228070175438,Que medicamentos trazem risco de alergia? Cite trechos da bula.,"1. Cefalexina:
+- Trecho da bula: ""Qualquer paciente que tenha demonstrado alguma forma de alergia, particularmente a drogas,...""
+
+2. Dipirona:
+- Trecho da bula: ""Em pacientes que estão sob risco potencial para reações anafiláticas,...""
+
+Portanto, os medicamentos Cefalexina e Dipirona trazem risco de alergia, conforme mencionado em suas respectivas bulas.",2.02
+2025-06-03T20:15:51,Quais medicamentos analisados apresentam contraindicação para pacientes com pressão alta (hipertensão)?,Os medicamentos analisados que apresentam contraindicação para pacientes com pressão alta (hipertensão) são Losartana e Ibuprofeno.,1.68,,,,,51.13636363636363,Existe algum medicamento proibido para quem tem hipertensão?,"Sim, o medicamento Losartana não é recomendado para pacientes que não respondem a medicamentos anti-hipertensivos cuja ação se dá através da inibição do sistema renina-angiotensina. Portanto, o uso de Losartana não é recomendado para esses pacientes com hipertensão. (Losartana, bula_1747686270885.pdf, seção: Geralmente não respondem)",3.94
+2025-06-03T20:16:05,Quais medicamentos analisados necessitam ser administrados junto com alimentos? Existem recomendações específicas sobre jejum ou horários?,"Medicamentos que necessitam ser administrados junto com alimentos são o Cetoprofeno e o Ibuprofeno. Para o Cetoprofeno, quando administrado com alimentos, a taxa de absorção diminui. Já para o Ibuprofeno, os medicamentos foram administrados com água a temperatura ambiente, em jejum. Não há recomendações específicas sobre horários para administração desses medicamentos.",2.08,,,,,46.558704453441294,Há algum remédio que precisa ser tomado junto com comida ou em jejum?,"Sim, o medicamento Carbamazepina deve ser tomado durante, após ou entre as refeições. Já o Ibuprofeno foi administrado em voluntários sadios em condições de jejum.",1.85
+2025-06-03T20:16:23,Quais medicamentos analisados possuem contraindicação ou advertência sobre o uso concomitante com álcool? Cite os trechos relevantes.,"1. Loratadina:
+- Trecho: ""Quando administrado concomitantemente com álcool, loratadina não exerce efeitos potencializadores...""
+
+2. Sulfametoxazol:
+- Trecho: ""Este medicamento contém 0,4025% de álcool (etanol) e pode causar intoxicação, especialmente em crianças...""
+
+3. Nimesulida:
+- Trecho: ""A administração concomitante com drogas hepatotóxicas conhecidas e abuso de álcool, devem ser evitados durante o tratamento com nimesulida...""
+
+4. Clonazepam:
+- Trecho: ""O risco de dependência aumenta de acordo com a dose e com a duração do tratamento e também, é maior em pacientes com antecedentes médicos de álcool e/ou abuso de drogas...""
+
+5. Sinvastatina:
+- Trecho: ""Deve-se utilizar o medicamento com cuidado em pacientes que consomem quantidades substanciais de álcool e...""
+- Trecho: ""O uso concomitante de medicamentos conhecidos por apresentarem um potente efeito inibitório sobre a CYP3A4 é contraindicado...""
+- Trecho: ""os pacientes que tomam outros medicamentos conhecidos por apresentarem efeito inibitório moderado sobre a CYP3A4 concomitantemente com a sinvastatina, particularmente com doses mais altas de sinvastatina, podem ter um maior risco de miopatia...""
+
+Portanto, os medicamentos analisados que possuem contraindicação ou advertência sobre o uso concomitante com álcool são Loratadina, Sulfametoxazol, Nimesulida, Clonazepam e Sinvastatina.",4.65,,,,,83.04093567251462,Quais não podem ser usados com álcool ou têm advertência sobre isso?,Os medicamentos Clonazepam e Dipirona não podem ser usados com álcool ou têm advertência sobre isso.,3.91
+2025-06-03T20:16:39,Quais medicamentos analisados possuem restrição de uso durante a gravidez?,"Os medicamentos analisados que possuem restrição de uso durante a gravidez são: Omeprazol, Atenolol, Ranitidina, Ibuprofeno, Deste, Sinvastatina, Losartana, Dipirona e Paracetamol.",2.31,,,,,64.15094339622641,Existe restrição ao uso dos remédios durante a gravidez?,"Sim, existem restrições ao uso dos medicamentos durante a gravidez. O Ibuprofeno, por exemplo, é contraindicado durante o terceiro trimestre de gravidez. Já o Omeprazol, a Ranitidina, o Atenolol, a Metformina, a Prednisona, a Carbamazepina e a Dipirona não devem ser utilizados por mulheres grávidas sem orientação médica.",3.79
+2025-06-03T20:17:02,Qual é a dosagem recomendada para adultos segundo as bulas dos medicamentos analisados?,"A dosagem recomendada para adultos segundo as bulas dos medicamentos analisados varia de acordo com o medicamento:
+
+- Nimesulida: 50 - 100 mg.
+- Amoxicilina: 250 mg três vezes ao dia, podendo ser aumentada para 500 mg.
+- Atenolol: Dosagens apropriadas.
+- Atorvastatina: Dose máxima recomendada de 20 mg/dia.
+- Losartana: Dose diária de 100 mg.
+- Dexametasona: Doses mais altas quando necessárias.
+- Diazepam: Doses terapêuticas, com aumento do risco em doses maiores.
+- Metformina: Dose diária total antes do jantar, ajuste de dose conforme evolução do tratamento.
+- Loratadina: Dose única de 10 mg/dia em adultos com rinite alérgica.
+- Carbamazepina: 200 mg, 2 a 3 vezes ao dia.
+- Azitromicina: Dose total de 30 mg/kg em crianças pesando mais de 45 kg.
+
+Não foi possível encontrar a resposta no material fornecido para o medicamento Teste.",7.1,,,,,46.15384615384615,Quais as doses recomendadas para adultos conforme as bulas?,"**Medicamento:** Dipirona  
+**Arquivo:** bula_1747686139023.pdf  
+**Seção:** POSOLOGIA  
+**Resposta:** Para adultos, a dose recomendada de Dipirona é de 500 a 1000 mg, podendo ser administrada de 3 a 4 vezes ao dia.",5.33

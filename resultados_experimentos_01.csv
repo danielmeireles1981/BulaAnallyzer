@@ -1,0 +1,125 @@
+DataHora,Pergunta,Resposta,Tempo (s),Precisão A1,Precisão A2,Completude A1,Completude A2,Consistência,Pergunta Reformulada,Resposta Reformulada,Tempo Ref (s)
+2025-06-03T18:37:51,Qual medicamento analisado pode ser utilizado durante a gravidez?,"Não há nenhum medicamento na lista que possa ser utilizado durante a gravidez sem orientação médica.  Todos os medicamentos listados indicam que não devem ser usados por mulheres grávidas sem supervisão médica, e alguns especificam contraindicações em determinados trimestres da gravidez.",3.74,,,,,53.588516746411486,Há algum medicamento dos analisados que pode ser usado por gestantes?,"Não foi possível encontrar a resposta no material fornecido.  Embora algumas bulas mencionem o uso na gravidez (Ibuprofeno, Amoxicilina), não há informações suficientes para determinar se podem ou não ser usados por gestantes.  As informações são limitadas a advertências sobre evitar o uso nos primeiros seis meses de gravidez (Ibuprofeno) e a necessidade de orientação médica (Amoxicilina).",1.4
+2025-06-03T18:38:08,Quais medicamentos analisados apresentam sonolência como efeito colateral?,"Os seguintes medicamentos apresentam sonolência como efeito colateral, de acordo com os trechos fornecidos:
+
+* **Teste (bula_1747686513651.pdf):**  Os pacientes que apresentarem sonolência podem se beneficiar de uma mudança na administração.
+* **Cetoprofeno (bula_1747686539148.pdf):** Os pacientes devem ser advertidos sobre o risco de ocorrência de sonolência.
+* **Metformina (bula_1747686341012.pdf):** Sonolência e perda de consciência são mencionados.
+* **Clonazepam (bula_1747686400890.pdf):** A administração antes de deitar reduz a inconveniência da sonolência.
+* **Loratadina (bula_1747686464101.pdf):** Foi observado um aumento da incidência de sonolência relacionado com a dose.
+* **Nimesulida (bula_1747686522851.pdf):** Letargia e sonolência são mencionados entre os efeitos colaterais.
+* **Losartana (bula_1747686270885.pdf):** Tontura ou sonolência podem ocorrer ocasionalmente.",3.59,,,,,90.03359462486003,Algum dos medicamentos apresenta sonolência como possível efeito adverso?,"Sim.
+
+* **Teste (bula_1747686513651.pdf):**  O trecho menciona que pacientes que apresentarem sonolência podem se beneficiar de uma mudança na administração.
+* **Cetoprofeno (bula_1747686539148.pdf):** Os pacientes devem ser advertidos sobre o risco de sonolência.
+* **Clonazepam (bula_1747686400890.pdf):** A administração antes de deitar pode reduzir a inconveniência da sonolência, especialmente no início do tratamento.
+* **Loratadina (bula_1747686464101.pdf):** Foi observado aumento da incidência de sonolência relacionado à dose.",2.71
+2025-06-03T18:38:26,Quais medicamentos analisados são indicados para uso em crianças? Existem restrições de idade ou posologia específica?,"Paracetamol (arquivo: bula_1747686102131.pdf, seção REGEX): Indicado para redução da febre e alívio temporário de dores leves a moderadas em bebês e crianças.  A posologia para crianças abaixo de 12 anos é de 1 gota/kg até a dosagem máxima de 35 gotas por dose. Para crianças abaixo de 11kg ou 2 anos, recomenda-se consultar um médico.  Existem informações adicionais sobre farmacocinética em crianças, mas não há restrições de idade além das mencionadas na posologia.
+
+Amoxicilina (arquivo: bula_1747686151775.pdf): Menciona o uso em crianças com pneumonia adquirida na comunidade, mas não especifica a faixa etária ou posologia.
+
+Pantoprazol (arquivo: bula_1747686200930.pdf): A experiência clínica em crianças é limitada.
+
+Dexametasona (arquivo: bula_1747686439678.pdf): Menciona que as recomendações específicas para crianças devem ser observadas, mas não especifica quais são.
+
+Prednisona (arquivo: bula_1747686430224.pdf): Menciona posologias para lactentes e crianças, mas não especifica valores, apenas que devem ser orientadas segundo as mesmas considerações feitas para adultos.",3.72,,,,,61.954887218045116,Existem remédios indicados para crianças? Quais as faixas etárias e dosagens?,"Sim.
+
+* **Paracetamol:**  A bula (arquivo bula_1747686102131.pdf) indica uso adulto e pediátrico, sendo utilizado em bebês e crianças para redução da febre e alívio temporário de dores leves a moderadas.  A posologia para crianças não é especificamente detalhada na bula fornecida, apenas há menções a estudos com crianças de diferentes idades e pesos (ex: crianças de 4,1 ± 2,6 anos;  administração de 10 mg/kg em pacientes pediátricos com hepatopatias; eliminação do paracetamol em crianças sadias comparada com crianças com cirrose).  Há também menção à meia-vida de eliminação do paracetamol em crianças (1,5 a 3 horas), e  informações sobre o volume de distribuição (0,7 a 1 litro/kg em crianças e adultos). 
+
+* **Sulfametoxazol:** A bula (arquivo bula_1747686654507.pdf) menciona posologia para crianças até 12 anos, mas não detalha as faixas etárias e dosagens específicas.
+
+* **Prednisona:** A bula (arquivo bula_1747686430224.pdf) indica que a dose pediátrica inicial pode variar de 0,14 mg a 2 mg/kg de peso por dia, ou de 4 mg a 60 mg/m² de superfície corporal por dia.  A bula também afirma que as posologias para lactentes e crianças devem ser orientadas com as mesmas considerações para adultos, sem rigidez estrita aos índices para idade ou peso corporal.
+
+
+* **Metformina:** A bula (arquivo bula_1747686341012.pdf) indica que o medicamento é contraindicado na faixa etária pediátrica.
+
+
+Para os demais medicamentos (Atorvastatina, Pantoprazol, Teste, Loratadina), não há informações suficientes sobre indicação e dosagem pediátricas na bula fornecida.",4.54
+2025-06-03T18:38:39,Quais medicamentos analisados são recomendados para alívio de dor de cabeça ou dores leves a moderadas?,"Paracetamol (bula_1747686102131.pdf, seção INDICAÇÕES):  Indicado para redução da febre e alívio temporário de dores leves a moderadas, incluindo dor de cabeça.
+Dipirona (bula_1747686139023.pdf):  A bula menciona efeito analgésico e que a dose e via de administração dependem do efeito analgésico desejado, o que implica em seu uso para dor de cabeça, embora não cite explicitamente.",1.52,,,,,59.642857142857146,Qual remédio desses serve para dor de cabeça ou outras dores leves?,"Paracetamol (bula_1747686102131.pdf): Indicado para dor de cabeça, entre outras dores leves a moderadas, como dores associadas a resfriados comuns, dor no corpo, dor de dente, dor nas costas, dores musculares, dores leves associadas a artrites e dismenorreia.  (Seção: INDICAÇÕES)",2.06
+2025-06-03T18:38:57,Quais medicamentos analisados apresentam risco de reações alérgicas? Cite exemplos e os trechos da bula.,"Os seguintes medicamentos apresentam risco de reações alérgicas, de acordo com os trechos das bulas fornecidas:
+
+* **Amoxicilina (bula_1747686503194.pdf e bula_1747686151775.pdf):**  ""cica que ocorre em associação com uma reação alérgica à amoxicilina (ver Reações Adversas)"" (bula_1747686503194.pdf) e ""- como com outros antibióticos, reações alérgicas graves, incluindo edema angioneurótico, anafilaxia (ver Advertências e Precauções),"" (bula_1747686151775.pdf).
+
+* **Dipirona (bula_1747686139023.pdf):** ""Pacientes que apresentam reações anafilactoides à dipirona podem apresentar um risco especial para reações semelhantes a outros analgésicos não narcóticos."" (bula_1747686139023.pdf).  A bula também menciona reações anafiláticas. (bula_1747686139023.pdf)
+
+* **Ibuprofeno (bula_1747686119869.pdf):** ""Este produto contém ibuprofeno, que pode causar reações alérgicas, como a asma,"" (bula_1747686119869.pdf).
+
+* **Cetoprofeno (bula_1747686539148.pdf):** ""Este produto contém cetoprofeno, que pode causar reações alérgicas, como a asma,"" (bula_1747686539148.pdf).
+
+* **Paracetamol (bula_1747686102131.pdf):** ""Este produto contém o corante amarelo de TARTRAZINA que pode causar reações de natureza alérgica, entre as quais asma brônquica, especialmente em pessoas alérgicas ao ácido acetilsalicílico."" (bula_1747686102131.pdf)
+
+
+* **Pantoprazol (bula_1747686200930.pdf):** ""reações alérgicas como coceira e reações de pele (exantema, rash e erupções)"" (bula_1747686200930.pdf).",5.51,,,,,32.73195876288659,Que medicamentos trazem risco de alergia? Cite trechos da bula.,"Cefalexina (bula_1747686176955.pdf): ""Qualquer paciente que tenha demonstrado alguma forma de alergia, particularmente a drogas,...""
+
+Pantoprazol (bula_1747686200930.pdf): ""O Pantoprazol sódico sesqui-hidratado IV não deve ser usado por indivíduos que apresentem alergia (hipersensibilidade) conhecida ao pantoprazol, aos demais componentes da fórmula ou a benzimidazois substituídos.""",1.97
+2025-06-03T18:39:11,Quais medicamentos analisados apresentam contraindicação para pacientes com pressão alta (hipertensão)?,"Não foi possível encontrar a resposta no material fornecido.  Embora algumas bulas mencionem hipertensão em relação a indicações e tratamento, não há menção explícita de contraindicação para pacientes hipertensos em nenhum dos medicamentos listados.",1.93,,,,,70.0990099009901,Existe algum medicamento proibido para quem tem hipertensão?,"Não foi possível encontrar a resposta no material fornecido.  Embora o material mencione hipertensão e alguns medicamentos usados para seu tratamento (Losartana, Atenolol, Captopril, Hidroclorotiazida), não há informações sobre quais medicamentos são proibidos para pessoas com hipertensão.",2.61
+2025-06-03T18:39:26,Quais medicamentos analisados necessitam ser administrados junto com alimentos? Existem recomendações específicas sobre jejum ou horários?,"Não foi possível encontrar a resposta no material fornecido.  Embora alguns trechos indiquem que alguns medicamentos podem ser administrados com ou sem alimentos (Losartana, bula_1747686270885.pdf, POSOLOGIA E MODO DE USAR), e outros que a absorção é afetada pela presença de alimentos (Cetoprofeno, bula_1747686539148.pdf), não há informações claras sobre recomendações específicas sobre jejum ou horários para nenhum dos medicamentos listados.  O Ibuprofeno foi administrado em jejum em um estudo (bula_1747686119869.pdf), mas esta não é uma indicação de uso rotineiro.",2.66,,,,,46.134020618556704,Há algum remédio que precisa ser tomado junto com comida ou em jejum?,"Sim.
+
+* **Ibuprofeno**:  ""Os medicamentos foram administrados com água a temperatura ambiente, em jejum..."" (Arquivo: bula_1747686119869.pdf, Tipo: KEYWORD)
+* **Carbamazepina**: ""Os comprimidos podem ser tomados durante, após ou entre as refeições..."" (Arquivo: bula_1747686564797.pdf, Tipo: FAISS)",2.25
+2025-06-03T18:39:43,Quais medicamentos analisados possuem contraindicação ou advertência sobre o uso concomitante com álcool? Cite os trechos relevantes.,"Os seguintes medicamentos possuem contraindicação ou advertência sobre o uso concomitante com álcool:
+
+* **Nimesulida (bula_1747686522851.pdf):** ""A administração concomitante com drogas hepatotóxicas conhecidas e abuso de álcool, devem ser evitados durante o tratamento com nimesulida,...""
+* **Clonazepam (bula_1747686400890.pdf):** ""O risco de dependência aumenta de acordo com a dose e com a duração do tratamento e também, é maior em pacientes com antecedentes médicos de álcool e/ou abuso de drogas.""
+* **Sulfametoxazol (bula_1747686654507.pdf):** ""Este medicamento contém 0,4025% de álcool (etanol) e pode causar intoxicação, especialmente em crianças....""  (Embora não seja uma contraindicação ao uso concomitante de *outro* álcool, o medicamento *contém* álcool).
+* **Sinvastatina (bula_1747686358286.pdf):** ""tica alterados antes do tratamento com a sinvastatina e/ou consumiam quantidades consideráveis de álcool."" (Menciona o consumo de álcool antes do tratamento, mas não como contraindicação ao uso concomitante).
+
+Note que a Sinvastatina apresenta menção ao álcool antes do tratamento, mas não há contraindicação expressa ao uso concomitante no material fornecido.",3.83,,,,,49.55991875423155,Quais não podem ser usados com álcool ou têm advertência sobre isso?,"Clonazepam (bula_1747686400890.pdf):  Seu efeito é agravado pelo consumo de álcool.  Deve-se evitar dirigir, operar máquinas e exercer outras atividades perigosas, pelo menos nos primeiros dias do tratamento.  O álcool deve ser evitado por pacientes que recebem clonazepam (vide “Advertências e Precauções” e “Superdose”).  Efeitos colaterais aumentados como sedação e depressão cardiorrespiratória podem ocorrer também quando coadministrado com qualquer agente depressor de ação central, incluindo álcool.
+
+Paracetamol (bula_1747686102131.pdf): Usuários crônicos de bebidas alcoólicas podem apresentar um risco aumentado de doenças hepáticas.",2.67
+2025-06-03T18:40:05,Quais medicamentos analisados possuem restrição de uso durante a gravidez?,"Todos os medicamentos analisados possuem restrições de uso durante a gravidez:
+
+* **Omeprazol (bula_1747686191297.pdf):** Categoria de risco na gravidez: C.  Não deve ser utilizado por mulheres grávidas sem orientação médica.
+* **Atenolol (bula_1747686300462.pdf):** Categoria de risco na gravidez: D. Não deve ser utilizado por mulheres grávidas sem orientação médica.
+* **Ranitidina (bula_1747686210515.pdf):** Categoria B de risco na gravidez. Não deve ser utilizado em mulheres grávidas sem orientação médica.  O medicamento só deve ser usado durante a gravidez e o aleitamento caso seja essencial.
+* **Ibuprofeno (bula_1747686119869.pdf):**  Uso deve ser evitado nos primeiros seis meses de gravidez;  deve-se evitar seu uso durante a gravidez avançada e é contraindicado durante o terceiro trimestre de gravidez. Não se recomenda a administração durante a gravidez.  O uso durante a gravidez só deve ser feito se estritamente necessário.
+* **Deste (bula_1747686419923.pdf):** Não deve ser utilizado por mulheres grávidas sem orientação médica. A paciente deve informar imediatamente seu médico em caso de suspeita de gravidez.
+* **Dipirona (bula_1747686139023.pdf):**  Informe imediatamente seu médico em caso de suspeita de gravidez.
+* **Sinvastatina (bula_1747686358286.pdf):** A segurança em mulheres grávidas não foi estabelecida. Não foram conduzidos estudos clínicos controlados em mulheres grávidas.
+* **Losartana (bula_1747686221623.pdf):** Não deve ser administrado durante o segundo ou o terceiro trimestre de gestação. Não deve ser utilizado por mulheres grávidas sem orientação médica.
+* **Paracetamol (bula_1747686102131.pdf):**  Em casos de uso por mulheres grávidas ou amamentando, a administração deve ser feita por períodos curtos. Não deve ser utilizado por mulheres grávidas sem orientação médica. Não foram realizados estudos clínicos bem controlados em mulheres durante a gestação ou lactação.",5.25,,,,,90.64296915838996,Existe restrição ao uso dos remédios durante a gravidez?,"Sim, existem restrições ao uso de vários medicamentos durante a gravidez, conforme descrito nas bulas:
+
+* **Omeprazol (bula_1747686191297.pdf):** Categoria de risco na gravidez: C.  Não deve ser utilizado por mulheres grávidas sem orientação médica. Não existem estudos adequados e bem controlados sobre o uso do omeprazol durante a gravidez e lactação.
+
+* **Ibuprofeno (bula_1747686119869.pdf):** Deve ser evitado nos primeiros seis meses de gravidez e seu uso deve ser evitado durante a gravidez avançada. É contraindicado durante o terceiro trimestre de gravidez.  Não se recomenda a administração durante a gravidez. O uso só deve ser feito se estritamente necessário.
+
+* **Ranitidina (bula_1747686210515.pdf):** Categoria B de risco na gravidez.  Só deve ser usado durante a gravidez e o aleitamento caso seja essencial. Não deve ser utilizado em mulheres grávidas sem orientação médica.
+
+* **Atenolol (bula_1747686300462.pdf):** Categoria de risco na gravidez: D. Não deve ser utilizado por mulheres grávidas sem orientação médica.
+
+* **Sinvastatina (bula_1747686358286.pdf):** A segurança em mulheres grávidas não foi estabelecida. Não foram conduzidos estudos clínicos controlados em mulheres grávidas.
+
+* **Deste (bula_1747686419923.pdf):** Não deve ser utilizado por mulheres grávidas sem orientação médica.
+
+* **Metformina (bula_1747686341012.pdf):** Não deve ser utilizado por mulheres grávidas sem orientação médica. Existem resultados contraditórios com relação à incidência aumentada de óbito embriofetal intrauterino após administração de doses extremamente altas em ratas e camundongos fêmeas.
+
+* **Teste (bula_1747686513651.pdf):** Mulheres grávidas durante o terceiro trimestre correm o risco de apresentar sintomas extrapiramidais e/ou de abstinência após o parto.
+
+* **Dipirona (bula_1747686139023.pdf):** Não existem dados clínicos suficientes sobre o uso de dipirona durante a gravidez. Recomenda-se não utilizar a dipirona durante os primeiros 3 meses de gravidez.
+
+* **Hidroclorotiazida (bula_1747686290500.pdf):** Existe apenas experiência limitada com a hidroclorotiazida durante a gravidez, especialmente durante o primeiro trimestre.
+
+* **Prednisona (bula_1747686430224.pdf):** Categoria B. Não deve ser utilizado por mulheres grávidas sem orientação médica.
+
+* **Carbamazepina (bula_1747686564797.pdf):** Existem poucos casos relatados de crises convulsivas em recém-nascidos cujas mães usaram o medicamento durante a gravidez.
+
+* **Paracetamol (bula_1747686102131.pdf):** Em casos de uso por mulheres grávidas ou amamentando, a administração deve ser feita por períodos curtos. Não foram realizados estudos clínicos bem controlados em mulheres durante a gestação ou lactação.  Não afeta adversamente a gestante ou o feto quando administrado conforme recomendações de prescrição.  Não deve ser utilizado por mulheres grávidas sem orientação médica.",7.06
+2025-06-03T18:40:22,Qual é a dosagem recomendada para adultos segundo as bulas dos medicamentos analisados?,"* **Nimesulida (bula_1747686522851.pdf):** 50-100 mg.
+* **Amoxicilina (bula_1747686503194.pdf e bula_1747686151775.pdf):** 250 mg três vezes ao dia, podendo ser aumentada para 500 mg três vezes ao dia em infecções mais graves.  Em casos apropriados, recomenda-se 3g duas vezes ao dia (máximo 6g/dia).
+* **Atorvastatina (bula_1747686366839.pdf):** Máximo 20mg/dia.
+* **Carbamazepina (bula_1747686564797.pdf):** 200 mg, 2 a 3 vezes ao dia (média).
+* **Losartana (bula_1747686270885.pdf):** 100mg por dia (a maioria dos pacientes).
+
+
+Não foram encontradas informações sobre dosagem para adultos para os medicamentos Atenolol (bula_1747686300462.pdf), Teste (bula_1747686513651.pdf), Metformina (bula_1747686341012.pdf), Loratadina (bula_1747686464101.pdf) e Azitromicina (bula_1747686164875.pdf).",3.32,,,,,45.70637119113574,Quais as doses recomendadas para adultos conforme as bulas?,"Não foi possível encontrar as doses recomendadas para adultos em todas as bulas fornecidas de forma explícita e unificada para cada medicamento.  Algumas bulas mencionam faixas de dosagem ou doses padrão, mas não especificamente para adultos.  As informações disponíveis são:
+
+
+* **Amoxicilina:**  250mg três vezes ao dia, podendo ser aumentada para 500mg três vezes ao dia (para adultos e crianças acima de 40kg).  (Arquivo: bula_1747686503194.pdf, Posologia)
+
+* **Nimesulida:** 50-100mg (para adultos e crianças acima de 12 anos). (Arquivo: bula_1747686522851.pdf)
+
+* **Paracetamol:** A bula menciona várias doses em diferentes contextos (4g/dia, 3g/dia), mas não indica uma dose padrão recomendada para adultos. Além disso, a bula descreve estudos com doses de até 4g/dia em indivíduos com hepatopatias, sem afirmar que essa seja uma dose recomendada para adultos saudáveis. (Arquivo: bula_1747686102131.pdf)
+
+
+As demais bulas não fornecem informações sobre doses recomendadas para adultos.",3.46
