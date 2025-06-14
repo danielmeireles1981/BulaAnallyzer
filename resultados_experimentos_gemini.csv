@@ -1,0 +1,124 @@
+DataHora,Pergunta,Resposta,Tempo (s),Precisão A1,Precisão A2,Completude A1,Completude A2,Consistência,Pergunta Reformulada,Resposta Reformulada,Tempo Ref (s)
+2025-06-05T14:54:12,Liste os medicamentos analisados que podem ser usados por gestantes segundo as bulas.,"Não foi possível encontrar a resposta no material fornecido.  Embora algumas bulas mencionem gravidez (Dexametasona, Clonazepam, Losartana), nenhuma indica claramente que o medicamento *pode* ser usado por gestantes.  A bula da Losartana, por exemplo, explicitamente contraindica seu uso durante o segundo e terceiro trimestres. As demais apenas mencionam a gravidez sem dar indicação de uso.",3.56,,,,,63.265306122448976,Cite os medicamentos que podem ser utilizados por mulheres grávidas conforme as bulas.,"Não foi possível encontrar a resposta no material fornecido.  Todas as bulas fornecidas indicam que os medicamentos mencionados (Omeprazol, Deste, Metformina, Losartana, Sinvastatina, Sulfametoxazol, Nimesulida, Prednisona, Hidroclorotiazida, Clonazepam e Paracetamol) não devem ser usados por mulheres grávidas sem orientação médica, ou que sua segurança em mulheres grávidas não foi estabelecida, ou ainda que apresentam contraindicação em gestantes.",2.14
+2025-06-05T14:54:30,Liste os medicamentos que apresentam sonolência como efeito colateral nas bulas.,"Medicamento: Teste | Arquivo: bula_1747686513651.pdf | Seção: Trecho | Resposta: Os pacientes que apresentarem sonolência podem se beneficiar de uma mudança na administração de uma vez ao dia para duas vezes ao dia ou uma vez ao dia ao deitar-se.
+
+Medicamento: Cetoprofeno | Arquivo: bula_1747686539148.pdf | Seção: Trecho | Resposta: Os pacientes devem ser advertidos sobre o risco de ocorrência de sonolência,...
+
+Medicamento: Loratadina | Arquivo: bula_1747686464101.pdf | Seção: Trecho | Resposta: foi observado um aumento da incidência de sonolência relacionado com a dose.
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção: Trecho | Resposta: A administração de uma dose, antes de o paciente se deitar, além de reduzir a inconveniência da sonolência, pode ser desejável especialmente durante o início do tratamento.
+
+Medicamento: Metformina | Arquivo: bula_1747686341012.pdf | Seção: Trecho | Resposta: sonolência e perda de consciência incluindo coma, respiração superficial e bradicardia.
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção: Trecho | Resposta: Efeitos colaterais aumentados como sedação e depressão cardiorrespiratória podem ocorrer também quando clonazepam é coadministrado com qualquer agente depressor de ação central, incluindo álcool.  (Sedação pode ser considerada sinônimo de sonolência neste contexto)
+
+Medicamento: Deste | Arquivo: bula_1747686419923.pdf | Seção: Trecho | Resposta: Há evidências de desenvolvimento de tolerância à benzodiazepínicos em termos de efeitos sedativos. (Sedação pode ser considerada sinônimo de sonolência neste contexto)",4.63,,,,,100.0,Liste os medicamentos cuja bula cita sonolência como efeito adverso.,"Medicamento: Teste | Arquivo: bula_1747686513651.pdf | Seção: Trecho | Resposta: Os pacientes que apresentarem sonolência podem se beneficiar de uma mudança na administração de uma vez ao dia para duas vezes ao dia ou uma vez ao dia ao deitar-se.
+
+Medicamento: Cetoprofeno | Arquivo: bula_1747686539148.pdf | Seção: Trecho | Resposta: Os pacientes devem ser advertidos sobre o risco de ocorrência de sonolência,...
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção: Trecho | Resposta: A administração de uma dose, antes de o paciente se deitar, além de reduzir a inconveniência da sonolência, pode ser desejável especialmente durante o início do tratamento.
+
+Medicamento: Loratadina | Arquivo: bula_1747686464101.pdf | Seção: Trecho | Resposta: foi observado um aumento da incidência de sonolência relacionado com a dose.",3.24
+2025-06-05T14:54:49,Quais medicamentos têm indicação pediátrica? Informe faixas etárias e doses mencionadas.,"Medicamento: Teste | Arquivo: bula_1747686513651.pdf | Seção: Populações especiais | Resposta: Pacientes pediátricos (10 a 17 anos): Recomenda-se uma dose inicial de 0,5 mg por dia, administrada em dose única diária pela manhã ou à noite. Se indicado, essa dose pode ser então ajustada em intervalos de, no mínimo, 24 horas com incrementos de 0,5 ou 1 mg/dia.  Pacientes pediátricos (13 a 17 anos): Recomenda-se uma dose inicial de 0,5 mg por dia, administrada em dose única diária pela manhã ou à noite. Se indicado, essa dose pode ser então ajustada em intervalos de, no mínimo, 24 horas com incrementos de 0,5 ou 1 mg/dia.
+
+Medicamento: Prednisona | Arquivo: bula_1747686430224.pdf | Seção: Trecho | Resposta: A dose pediátrica inicial pode variar de 0,14 mg a 2 mg/kg de peso por dia, ou de 4 mg a 60... (a faixa etária não é especificada).
+
+Medicamento: Hidroclorotiazida | Arquivo: bula_1747686290500.pdf | Seção: Uso em lactentes e crianças | Resposta: Até 2 anos de idade: dose diária total de 12,5 a 25 mg administrada em duas tomadas. De 2 a 12 anos de idade: dose de 25 a 100 mg, administrada em duas tomadas. A dose pediátrica diária usual deve ser baseada em 2 a 3 mg/kg de peso corporal, ou a critério médico, dividida em duas tomadas.",4.23,,,,,60.65217391304348,Quais remédios são indicados para crianças? Mencione faixas etárias e dosagens especificadas.,"Medicamento: Sulfametoxazol | Arquivo: bula_1747686654507.pdf | Seção: Posologia padrão | Resposta: Crianças até 12 anos: Os esquemas abaixo para crianças são aproximadamente equivalentes à dose diária de 6... (A dosagem completa não está presente no trecho fornecido).
+
+Medicamento: Prednisona | Arquivo: bula_1747686430224.pdf | Seção: Trecho | Resposta: A dose pediátrica inicial pode variar de 0,14 mg a 2 mg/kg de peso por dia, ou de 4 mg a 60... (A dosagem completa não está presente no trecho fornecido).  Posologias para lactentes e crianças devem ser orientadas segundo as mesmas considerações feitas para adultos, em vez de se adotar rigidez estrita aos índices indicados para idade ou peso corporal.
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: Trecho | Resposta: Em bebês e crianças é indicado para a redução da febre e para o alívio temporário de dores leves a moderadas, tais como:...(A dosagem não está especificada neste trecho).  O texto menciona estudos com crianças de 4,1 ± 2,6 anos e recém-nascidos prematuros e a termo, mas sem especificar dosagens.  Há menção à administração de 10 mg/kg em pacientes pediátricos com hepatopatias, mas sem especificar faixas etárias.  A bula também menciona que o Paracetamol tem apresentação para uso adulto e pediátrico.  Há menção à meia-vida de eliminação em crianças de 1,5 a 3 horas.
+
+
+Medicamento: Metformina | Arquivo: bula_1747686341012.pdf | Seção: tica | Resposta: Este medicamento é contraindicado na faixa etária pediátrica.
+
+Medicamento: Atorvastatina | Arquivo: bula_1747686366839.pdf | Seção: Trecho | Resposta: A eficácia e a segurança da atorvastatina em pacientes pediátricos não foi avaliada em estudos clínicos controlados envolvendo pacientes pré-adolescentes ou pacientes com idade inferior a 10 anos.
+
+
+Medicamento: Teste | Arquivo: bula_1747686513651.pdf | Seção: Trecho | Resposta: ...8 em pacientes pediátricos) são mostradas na Tabela 5. (A informação sobre a dosagem ou indicação específica para pacientes pediátricos não é apresentada neste trecho).",5.29
+2025-06-05T14:55:05,Liste os medicamentos indicados para dor de cabeça ou dores leves conforme as bulas.,"Medicamento: Dipirona | Arquivo: bula_1747686139023.pdf | Seção: INDICAÇÕES | Resposta: Este medicamento é indicado como analgésico e antitérmico.
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: INDICAÇÕES | Resposta: Este medicamento é indicado, em adultos, para a redução da febre e o alívio temporário de dores leves a moderadas, tais como: ... dores associadas a resfriados comuns, dor de cabeça, dor no corpo, dor de dente, dor nas costas, dores musculares, dores leves associadas a artrites e dismenorréia.
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: INDICAÇÕES | Resposta: Em bebês e crianças é indicado para a redução da febre e para o alívio temporário de dores leves a moderadas, tais como:...",3.34,,,,,100.0,Quais medicamentos têm indicação para dor de cabeça ou dor leve nas bulas analisadas?,"Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: INDICAÇÕES | Resposta: Este medicamento é indicado, em adultos, para a redução da febre e o alívio temporário de dores leves a moderadas, tais como: dores associadas a resfriados comuns, dor de cabeça, dor no corpo, dor de dente, dor nas costas, dores musculares, dores leves associadas a artrites e dismenorréia.
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: INDICAÇÕES | Resposta: Em bebês e crianças é indicado para a redução da febre e para o alívio temporário de dores leves a moderadas, tais como:",2.07
+2025-06-05T14:55:22,Quais medicamentos apresentam risco de reações alérgicas? Cite exemplos e trechos das bulas.,"Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: KEYWORD | Resposta: Este produto contém o corante amarelo de TARTRAZINA que pode causar reações de natureza alérgica, entre as quais asma brônquica, especialmente em pessoas alérgicas ao ácido acetilsalicílico.
+
+Medicamento: Ibuprofeno | Arquivo: bula_1747686119869.pdf | Seção: KEYWORD | Resposta: Este produto contém ibuprofeno, que pode causar reações alérgicas, como a asma,...
+
+Medicamento: Cetoprofeno | Arquivo: bula_1747686539148.pdf | Seção: KEYWORD | Resposta: Este produto contém cetoprofeno, que pode causar reações alérgicas, como a asma,...
+
+Medicamento: Dipirona | Arquivo: bula_1747686139023.pdf | Seção: KEYWORD | Resposta: Pacientes que apresentam reações anafilactoides à dipirona podem apresentar um risco especial para reações semelhantes a outros analgésicos não narcóticos.
+
+Medicamento: Pantoprazol | Arquivo: bula_1747686200930.pdf | Seção: Trecho | Resposta: aumento nos níveis de enzimas do fígado, tontura, reações alérgicas como coceira e reações de pele (exantema, rash e erupções), fraqueza, cansaço e mal-estar.",3.89,,,,,64.06984553391538,Quais remédios possuem risco de alergia? Apresente exemplos com trechos da bula.,"Medicamento: Cefalexina | Arquivo: bula_1747686176955.pdf | Seção: Trecho | Resposta: Qualquer paciente que tenha demonstrado alguma forma de alergia, particularmente a drogas,...
+
+Medicamento: Ibuprofeno | Arquivo: bula_1747686119869.pdf | Seção: Trecho | Resposta: especialmente em pessoas alérgicas ao ácido acetilsalicílico. Atenção: Contém os corantes amarelo de quinolina e azul brilhante que podem, eventualmente, causar reações alérgicas.
+
+Medicamento: Pantoprazol | Arquivo: bula_1747686200930.pdf | Seção: CONTRAINDICAÇÕES | Resposta: O Pantoprazol sódico sesqui-hidratado IV não deve ser usado por indivíduos que apresentem alergia (hipersensibilidade) conhecida ao pantoprazol, aos demais componentes da fórmula ou a benzimidazois substituídos.
+
+Medicamento: Dipirona | Arquivo: bula_1747686139023.pdf | Seção: Trecho | Resposta: a dipirona deve ser usada com cautela em pacientes que apresentem alergia atópica ou asma (vide “Contraindicações”). Reações cutâneas graves adversas:...",3.47
+2025-06-05T14:55:34,Algum medicamento analisado é contraindicado para pacientes hipertensos segundo as bulas?,Não foi possível encontrar a resposta no material fornecido.,0.84,,,,,100.0,Há medicamentos contraindicados para pessoas com pressão alta conforme as bulas analisadas?,"Não foi possível encontrar a resposta no material fornecido.  As bulas fornecidas mencionam o tratamento da hipertensão com Losartana e Atenolol, mas não explicitam contraindicações para pessoas com pressão alta em relação a esses ou outros medicamentos.",1.39
+2025-06-05T14:55:49,"Liste os medicamentos que devem ser tomados com alimentos ou em jejum, conforme as bulas.","Medicamento: Azitromicina | Arquivo: bula_1747686164875.pdf | Seção: POSOLOGIA E MODO DE USAR | Resposta: Os comprimidos de azitromicina podem ser tomados com ou sem alimentos.
+
+Medicamento: Ibuprofeno | Arquivo: bula_1747686119869.pdf | Seção: Trecho | Resposta: Os medicamentos foram administrados com água a temperatura ambiente, em jejum.  (Observação:  A bula indica que o Ibuprofeno foi administrado em jejum em um estudo, mas não especifica se essa é a recomendação para uso regular.)",2.43,,,,,85.59837728194726,Quais remédios devem ser administrados junto com alimentos ou em jejum conforme a bula?,"Medicamento: Carbamazepina | Arquivo: bula_1747686564797.pdf | Seção: POSOLOGIA E MODO DE USAR | Resposta: Os comprimidos podem ser tomados durante, após ou entre as refeições.
+
+Medicamento: Ibuprofeno | Arquivo: bula_1747686119869.pdf | Seção:  | Resposta: Os medicamentos foram administrados com água a temperatura ambiente, em jejum.",2.26
+2025-06-05T14:56:09,Cite os medicamentos que possuem advertência ou contraindicação sobre uso de álcool segundo as bulas.,"Medicamento: Loratadina | Arquivo: bula_1747686464101.pdf | Seção: INTERAÇÕES MEDICAMENTOSAS | Resposta: Quando administrado concomitantemente com álcool, loratadina não exerce efeitos potencializadores,...
+
+Medicamento: Sulfametoxazol | Arquivo: bula_1747686654507.pdf | Seção:  | Resposta: Este medicamento contém 0,4025% de álcool (etanol) e pode causar intoxicação, especialmente em crianças....
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção:  | Resposta: Esse efeito é agravado pelo consumo de álcool. Portanto, deve-se evitar dirigir, operar máquinas e exercer outras atividades perigosas, pelo menos nos primeiros dias do tratamento....
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção:  | Resposta: Efeitos colaterais aumentados como sedação e depressão cardiorrespiratória podem ocorrer também quando clonazepam é coadministrado com qualquer agente depressor de ação central, incluindo álcool. O álcool deve ser evitado por pacientes que recebem clonazepam (vide “Advertências e Precauções” e “Superdose”).
+
+Medicamento: Deste | Arquivo: bula_1747686419923.pdf | Seção:  | Resposta: sobretudo em pacientes com história de uso abusivo de medicamentos e/ou álcool.",3.93,,,,,100.0,Liste os medicamentos analisados que têm advertência sobre uso de álcool.,"Medicamento: Loratadina | Arquivo: bula_1747686464101.pdf | Seção: INTERAÇÕES MEDICAMENTOSAS | Resposta: Quando administrado concomitantemente com álcool, loratadina não exerce efeitos potencializadores,...
+
+Medicamento: Sulfametoxazol | Arquivo: bula_1747686654507.pdf | Seção: Trecho | Resposta: Este medicamento contém 0,4025% de álcool (etanol) e pode causar intoxicação, especialmente em crianças....
+
+Medicamento: Sinvastatina | Arquivo: bula_1747686358286.pdf | Seção: Trecho | Resposta: tica alterados antes do tratamento com a sinvastatina e/ou consumiam quantidades consideráveis de álcool.
+
+Medicamento: Cetoprofeno | Arquivo: bula_1747686539148.pdf | Seção: Trecho | Resposta: Atenção: Contém 11,81% de álcool (etanol).
+
+Medicamento: Diazepam | Arquivo: bula_1747686409826.pdf | Seção: Trecho | Resposta: Se a duração do sono for insuficiente ou for consumido álcool,...
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção: Trecho | Resposta: Esse efeito é agravado pelo consumo de álcool. Portanto, deve-se evitar dirigir, operar máquinas e exercer outras atividades perigosas, pelo menos nos primeiros dias do tratamento....
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção: KEYWORD | Resposta: Efeitos colaterais aumentados como sedação e depressão cardiorrespiratória podem ocorrer também quando clonazepam é coadministrado com qualquer agente depressor de ação central, incluindo álcool. O álcool deve ser evitado por pacientes que recebem clonazepam (vide “Advertências e Precauções” e “Superdose”).
+
+Medicamento: Deste | Arquivo: bula_1747686419923.pdf | Seção: KEYWORD | Resposta: sobretudo em pacientes com história de uso abusivo de medicamentos e/ou álcool.
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: KEYWORD | Resposta: Uso com álcool: Usuários crônicos de bebidas alcoólicas podem apresentar um risco aumentado de doenças hepá...",5.88
+2025-06-05T14:56:23,"Indique os medicamentos que não devem ser usados por gestantes, segundo as bulas.","Medicamento: Ibuprofeno | Arquivo: bula_1747686119869.pdf | Seção: Trecho | Resposta: o uso deste medicamento deve ser evitado nos primeiros seis meses de gravidez....
+
+Medicamento: Losartana | Arquivo: bula_1747686221623.pdf | Seção: Trecho | Resposta: A losartana potássica não deve ser administrado durante o segundo ou o terceiro trimestre de gestação (ver item 5. ADVERTÊNCIAS E PRECAUÇÕES – Uso na gravidez e amamentação). Este medicamento não deve ser utilizado por mulheres grávidas sem orientação médica....
+
+Medicamento: Sulfametoxazol | Arquivo: bula_1747686654507.pdf | Seção: Trecho | Resposta: ser utilizado durante a gravidez se os possíveis riscos para o feto justificarem os benefícios terapêuticos esperados.  Recomenda-se que todas as gestantes,... (A bula indica que o uso na gravidez só é aceitável se os benefícios superarem os riscos, o que implica em restrição de uso.)",3.15,,,,,85.0,Quais medicamentos têm restrição de uso para gestantes segundo as bulas?,Medicamento: Deste | Arquivo: bula_1747686419923.pdf | Seção: Trecho | Resposta: este medicamento não deve ser utilizado por mulheres grávidas sem orientação médica.,1.11
+2025-06-05T14:56:45,Informe as doses recomendadas para adultos segundo as bulas dos medicamentos analisados.,"Medicamento: Amoxicilina | Arquivo: bula_1747686151775.pdf | Seção: Posologia | Resposta: A dose padrão de 250 mg três vezes ao dia, podendo ser aumentada para 500 mg três vezes ao dia nas infecções mais graves. Tratamento com dosagem alta (máximo recomendável de 6 g ao dia em doses divididas): Recomenda-se a dose de 3g duas vezes ao dia, em casos apropriados.
+
+Medicamento: Amoxicilina | Arquivo: bula_1747686503194.pdf | Seção: Posologia | Resposta: A dose padrão é de 250mg três vezes ao dia, podendo ser aumentada para 500mg...
+
+Medicamento: Atorvastatina | Arquivo: bula_1747686366839.pdf | Seção: Posologia (implícito) | Resposta: a dose máxima recomendada é de 20mg/dia (não foram estudadas doses superiores a 20...
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção: Posologia | Resposta: Com base nas doses estabelecidas para crianças até 10 anos de idade (ver acima) e para os adultos (ver acima), recomenda-se para essa faixa etária o seguinte esquema: dose inicial de 1 a 1,5 mg/dia,... (A bula não especifica a dose para adultos, apenas menciona que há uma dose estabelecida para adultos que é comparada com a dose para crianças de até 10 anos.)
+
+
+Medicamento: Diazepam | Arquivo: bula_1747686409826.pdf | Seção: Posologia | Resposta: Doses orais usuais para adultos: dose inicial: 5 -10mg. Dependendo da gravidade dos sintomas, 5 - 20mg/dia. Cada dose oral para adultos não deve normalmente ser superior a 10mg.
+
+Medicamento: Nimesulida | Arquivo: bula_1747686522851.pdf | Seção: Posologia | Resposta: A dose mais recomendada corresponde a 50 - 100 mg, ou seja,...
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção: Posologia | Resposta: Adultos e crianças acima de 12 anos: 35 a 55 gotas, 3 a 5 vezes ao dia. A dose diária máxima de paracetamol é de 4000 mg (300 gotas) administrados em doses fracionadas, não excedendo a dose de 1000 mg/dose (75 gotas).",5.76,,,,,96.28302731751008,Liste as doses recomendadas para adultos de acordo com as bulas analisadas.,"Medicamento: Amoxicilina | Arquivo: bula_1747686151775.pdf | Seção: Posologia | Resposta: A dose padrão de 250 mg três vezes ao dia, podendo ser aumentada para 500 mg três vezes ao dia nas infecções mais graves. Tratamento com dosagem alta (máximo recomendável de 6 g ao dia em doses divididas): Recomenda-se a dose de 3g duas vezes ao dia, em casos apropriados.
+
+Medicamento: Amoxicilina | Arquivo: bula_1747686503194.pdf | Seção: Posologia | Resposta: A dose padrão é de 250mg três vezes ao dia, podendo ser aumentada para 500mg...
+
+Medicamento: Nimesulida | Arquivo: bula_1747686522851.pdf | Seção: Uso para adultos e crianças acima de 12 anos | Resposta: A dose mais recomendada corresponde a 50 - 100 mg, ou seja,...
+
+Medicamento: Diazepam | Arquivo: bula_1747686409826.pdf | Seção: Doses orais usuais para adultos | Resposta: dose inicial: 5 -10mg. Dependendo da gravidade dos sintomas, 5 - 20mg/dia. Cada dose oral para adultos não deve normalmente ser superior a 10mg.
+
+Medicamento: Atorvastatina | Arquivo: bula_1747686366839.pdf | Seção:  | Resposta: a dose máxima recomendada é de 20mg/dia (não foram estudadas doses superiores a 20...
+
+Medicamento: Paracetamol | Arquivo: bula_1747686102131.pdf | Seção:  | Resposta: Adultos e crianças acima de 12 anos: 35 a 55 gotas, 3 a 5 vezes ao dia. A dose diária máxima de paracetamol é de 4000 mg (300 gotas) administrados em doses fracionadas, não excedendo a dose de 1000 mg/dose (75 gotas).
+
+Medicamento: Clonazepam | Arquivo: bula_1747686400890.pdf | Seção:  | Resposta:  Com base nas doses estabelecidas para crianças até 10 anos de idade (ver acima) e para os adultos (ver acima), recomenda-se para essa faixa etária o seguinte esquema: dose inicial de 1 a 1,5 mg/dia,... (A bula não especifica a dose para adultos neste trecho.)
+
+Medicamento: Teste | Arquivo: bula_1747686513651.pdf | Seção:  | Resposta: Em estudos clínicos, a dose máxima estudada não excedeu uma dose diária total de 1,5 mg em pacientes < 20 kg, 2,5 mg em pacientes ≥ 20 kg ou 3,5 mg em pacientes > 45 kg. (A bula se refere a pacientes, não especificamente adultos.)",6.43
