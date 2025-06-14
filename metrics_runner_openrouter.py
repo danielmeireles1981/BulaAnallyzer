@@ -113,7 +113,7 @@ for idx, pergunta in enumerate(perguntas):
         inicio_ref = time.time()
         results_ref = search(
             pergunta_ref, model, index, passages, sources,
-            top_k=10, threshold=None, debug=False, hybrid=True
+            top_k=8, threshold=None, debug=False, hybrid=True
         )
         context_ref = "\n---\n".join([
             f"Medicamento: {medicines.get(src, 'Desconhecido')}\nArquivo: {src}\nTipo: {tag}\nTrecho: {passage[:300]}..."

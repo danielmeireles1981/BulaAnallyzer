@@ -114,7 +114,6 @@ def extract_passages_from_pdfs(pdf_folder):
                     page_text = page.extract_text()
                     if page_text:
                         text += page_text + '\n'
-                # >>> Passe filename para permitir fallback pelo nome do arquivo!
                 medicine = extract_medicine_name(text, filename=filename)
                 medicines[filename] = medicine
 
